@@ -236,3 +236,35 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 </pre>
+
+==================================
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>D://Users/Administrator/.m2/repository</localRepository>
+  <interactiveMode>true</interactiveMode>
+  <usePluginRegistry>false</usePluginRegistry>
+  <offline>false</offline>
+  ...
+<proxies>
+    <proxy>
+      <id>myproxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>hydproxy.igate.com</host>
+      <port>8080</port>
+      <username>jterala</username>
+      <password>Igate@444</password>
+    </proxy>
+ 
+<proxy>
+      <id>myproxy</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <host>hydproxy.igate.com</host>
+      <port>8080</port>
+      <username>jterala</username>
+      <password>Igate@444</password>
+    </proxy>  </proxies>
+</settings>
